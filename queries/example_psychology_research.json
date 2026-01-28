@@ -1,0 +1,66 @@
+{
+  "query_id": "qry_20260128_psychology",
+  "query_name": "Psychology Research Monitoring",
+  "query_type": "broad_topic",
+  "topic": "psychology",
+  "search_terms": [
+    "psychology research",
+    "psychological studies",
+    "mental health developments",
+    "cognitive science",
+    "behavioral psychology",
+    "clinical psychology"
+  ],
+  "search_scope": {
+    "geographic": ["Global"],
+    "temporal": {
+      "lookback_days": 60,
+      "focus_period": "Last 2 months"
+    },
+    "languages": ["en"]
+  },
+  "data_sources": {
+    "web_search": true,
+    "publications": [
+      "Nature",
+      "Science",
+      "Psychology Today",
+      "American Psychological Association"
+    ],
+    "article_archive": true
+  },
+  "processing_instructions": {
+    "signal_types": ["trend", "insight", "development"],
+    "min_confidence": 0.6,
+    "max_signals": 10,
+    "focus_areas": [
+      "new research findings",
+      "methodological developments",
+      "clinical applications",
+      "emerging topics"
+    ]
+  },
+  "automation_config": {
+    "enabled": false,
+    "schedule": "weekly",
+    "auto_save_signals": true,
+    "notification_enabled": false
+  },
+  "filters": {
+    "min_article_length": 500,
+    "source_credibility": "verified_only"
+  },
+  "provenance_config": {
+    "track_all_sources": true,
+    "include_processing_steps": true,
+    "citation_format": "APA"
+  },
+  "created_date": "2026-01-28T15:09:43Z",
+  "created_by": "system",
+  "execution_count": 0,
+  "metadata": {
+    "description": "Automated monitoring of psychology research, focusing on new findings, methodological developments, and clinical applications. Prioritizes peer-reviewed sources and academic publications.",
+    "tags": ["psychology", "research", "mental-health", "cognitive-science"],
+    "priority": "medium"
+  }
+}
