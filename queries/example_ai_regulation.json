@@ -1,0 +1,69 @@
+{
+  "query_id": "qry_20260128_ai_regulation",
+  "query_name": "AI Regulation & Policy Tracking",
+  "query_type": "trend_tracking",
+  "topic": "artificial intelligence regulation",
+  "search_terms": [
+    "AI regulation",
+    "artificial intelligence policy",
+    "AI governance",
+    "AI ethics guidelines",
+    "AI safety regulation",
+    "algorithmic accountability"
+  ],
+  "search_scope": {
+    "geographic": ["Global", "United States", "European Union", "United Kingdom", "China"],
+    "temporal": {
+      "lookback_days": 45,
+      "focus_period": "Last 45 days"
+    },
+    "languages": ["en"]
+  },
+  "data_sources": {
+    "web_search": true,
+    "publications": [
+      "Politico",
+      "The Verge",
+      "MIT Technology Review",
+      "Financial Times",
+      "Economist",
+      "TechCrunch"
+    ],
+    "article_archive": true
+  },
+  "processing_instructions": {
+    "signal_types": ["trend", "development", "risk", "opportunity"],
+    "min_confidence": 0.7,
+    "max_signals": 12,
+    "focus_areas": [
+      "new regulations and policies",
+      "enforcement actions",
+      "industry response",
+      "international coordination",
+      "ethical frameworks"
+    ]
+  },
+  "automation_config": {
+    "enabled": false,
+    "schedule": "0 10 * * 2,5",
+    "auto_save_signals": true,
+    "notification_enabled": true
+  },
+  "filters": {
+    "min_article_length": 600,
+    "source_credibility": "high_credibility"
+  },
+  "provenance_config": {
+    "track_all_sources": true,
+    "include_processing_steps": true,
+    "citation_format": "APA"
+  },
+  "created_date": "2026-01-28T15:09:43Z",
+  "created_by": "system",
+  "execution_count": 0,
+  "metadata": {
+    "description": "Track developments in AI regulation and policy globally. Monitor new regulations, enforcement actions, and industry responses. Critical for AI companies and policymakers.",
+    "tags": ["ai", "regulation", "policy", "governance", "ethics"],
+    "priority": "critical"
+  }
+}

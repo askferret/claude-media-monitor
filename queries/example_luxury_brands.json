@@ -1,0 +1,68 @@
+{
+  "query_id": "qry_20260128_luxury",
+  "query_name": "Luxury Market Intelligence",
+  "query_type": "broad_topic",
+  "topic": "luxury brands",
+  "search_terms": [
+    "luxury market trends",
+    "high-end consumer behavior",
+    "luxury brand strategy",
+    "premium products",
+    "luxury retail",
+    "luxury e-commerce"
+  ],
+  "search_scope": {
+    "geographic": ["Global", "Europe", "Asia", "North America"],
+    "temporal": {
+      "lookback_days": 30,
+      "focus_period": "Last month"
+    },
+    "languages": ["en"]
+  },
+  "data_sources": {
+    "web_search": true,
+    "publications": [
+      "Financial Times",
+      "Business of Fashion",
+      "Vogue Business",
+      "Wall Street Journal",
+      "McKinsey"
+    ],
+    "article_archive": true
+  },
+  "processing_instructions": {
+    "signal_types": ["trend", "insight", "opportunity"],
+    "min_confidence": 0.65,
+    "max_signals": 8,
+    "focus_areas": [
+      "consumer behavior shifts",
+      "brand strategies",
+      "market dynamics",
+      "sustainability initiatives",
+      "digital transformation"
+    ]
+  },
+  "automation_config": {
+    "enabled": false,
+    "schedule": "0 9 * * 1",
+    "auto_save_signals": true,
+    "notification_enabled": false
+  },
+  "filters": {
+    "min_article_length": 800,
+    "source_credibility": "high_credibility"
+  },
+  "provenance_config": {
+    "track_all_sources": true,
+    "include_processing_steps": true,
+    "citation_format": "APA"
+  },
+  "created_date": "2026-01-28T15:09:43Z",
+  "created_by": "system",
+  "execution_count": 0,
+  "metadata": {
+    "description": "Comprehensive monitoring of luxury market trends, consumer behavior, and brand strategies. Focuses on actionable insights for luxury industry stakeholders.",
+    "tags": ["luxury", "brands", "consumer-behavior", "retail", "market-trends"],
+    "priority": "high"
+  }
+}
