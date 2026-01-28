@@ -1,0 +1,61 @@
+{
+  "signal_id": "sig_20260128_122708_trust_personalization",
+  "signal_type": "insight",
+  "topic": "consumer culture and identity",
+  "title": "Trust as currency for identity and personalization",
+  "summary": "Consumers want personalization on their terms: clear value exchange, control over data, and transparent privacy-first practices. Trust differentiates brands that earn attention, data, and loyalty; first-party data and identity resolution are framed as the foundation for that trust.",
+  "detailed_analysis": "Experian and Human8 both emphasise that identity and self-expression through brands are contingent on trust. Experian: 64% prefer personalized experiences, but 39% say benefits outweigh privacy trade-offs and 32% feel uncomfortable with many data-driven tactics; first-party data is the foundation of meaningful, privacy-first engagement. Human8's 'recalibrating identities' theme implies people are more intentional about who they let into their identity construction—brands must earn the right to be part of that. Trust is not only data privacy: it includes transparent value, relevance without creepiness, and consistency across channels. For cultural analysts, the insight is that identity-based consumption is increasingly gated by trust; brands that fail on transparency or relevance are excluded from self-expressive choice.",
+  "confidence_score": 0.82,
+  "relevance_score": 0.92,
+  "source_articles": [
+    {
+      "article_url": "https://www.experian.com/blogs/marketing-forward/what-2026-consumer-insights-mean-for-marketers/",
+      "publication": "Experian Marketing Forward",
+      "title": "What 2026 consumer insights mean for marketers",
+      "date": "2025-12-11",
+      "relevance": "Primary evidence: 64% prefer personalization, 39% benefits vs privacy, 32% uncomfortable; trust as currency; first-party data."
+    },
+    {
+      "article_url": "https://www.wearehuman8.com/blog/what-are-the-key-consumer-trends-for-2026/",
+      "publication": "Human8",
+      "title": "What are the key consumer trends for 2026?",
+      "date": "2025-12-18",
+      "relevance": "Supporting: intentional identity, belonging self-defined; trust implied in who gets to participate in identity."
+    }
+  ],
+  "data_sources": [
+    {
+      "source_type": "web_search",
+      "source_name": "Identity and brands consumer behavior belonging self-expression",
+      "retrieved_date": "2026-01-28T12:27:06-05:00",
+      "contribution": "Academic and practitioner framing of self-expression and brand identity."
+    }
+  ],
+  "keywords": ["trust", "personalization", "first-party data", "privacy", "identity", "consumer data"],
+  "related_topics": ["personalization", "privacy", "identity resolution", "data"],
+  "implications": ["Invest in privacy-first identity and clear value exchange; avoid opaque or overreaching personalization.", "Position brand as earning a place in self-expression through transparency and relevance, not volume of touchpoints."],
+  "temporal_context": {
+    "timeframe": "2025-2026",
+    "is_emerging": false,
+    "velocity": "moderate"
+  },
+  "geographic_scope": ["Global", "United States", "Europe"],
+  "industry_sectors": ["marketing technology", "retail", "brand strategy", "data"],
+  "generated_date": "2026-01-28T12:27:08-05:00",
+  "generated_by": "query-orchestrator",
+  "query_context": {
+    "query_id": "qry_20260128_consumer_identity",
+    "query_text": "consumer culture and identity",
+    "query_type": "topic_search"
+  },
+  "provenance": {
+    "data_collection_method": "Automated web search and article fetch",
+    "processing_steps": ["Web search and fetch Experian, Human8", "Synthesis of trust and personalization themes"],
+    "citations": [
+      "Experian Marketing Services. (2025, December 11). What 2026 consumer insights mean for marketers. Experian Marketing Forward. https://www.experian.com/blogs/marketing-forward/what-2026-consumer-insights-mean-for-marketers/",
+      "Human8. (2025, December 18). What are the key consumer trends for 2026? Human8. https://www.wearehuman8.com/blog/what-are-the-key-consumer-trends-for-2026/"
+    ],
+    "verification_status": "partially_verified",
+    "data_quality_score": 0.8
+  }
+}

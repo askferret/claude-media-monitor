@@ -1,0 +1,68 @@
+{
+  "signal_id": "sig_20260128_122706_recalibrating_identities",
+  "signal_type": "trend",
+  "topic": "consumer culture and identity",
+  "title": "Recalibrating identities as central consumer theme in 2026",
+  "summary": "Identity is becoming more intentional, belonging more self-defined, and success more openly earned. Consumers are navigating contradiction (happiness vs. low trust, optimism vs. doubt) and renegotiating what it means to belong, feel recognised, and stay true to themselves.",
+  "detailed_analysis": "Human8's 2026 What matters report and Experian's 2026 consumer outlook both frame a shift in how people define who they are and what they want from brands. Global research shows 67% report feeling happy but only 46% trust institutions; 57% feel optimistic while 45% believe the next generation will be better off. Technology sharpens the divide: 76% believe it makes life easier and 54% experience AI positively, yet 64% worry technology will erode the human touch. This 'recalibrating identities' theme unites trend reports: consumers are spending and choosing more intentionally, expecting brands to align with their self-defined belonging and to deliver value, transparency, and relevance without overriding identity or privacy.",
+  "confidence_score": 0.85,
+  "relevance_score": 0.95,
+  "source_articles": [
+    {
+      "article_url": "https://www.wearehuman8.com/blog/what-are-the-key-consumer-trends-for-2026/",
+      "publication": "Human8",
+      "title": "What are the key consumer trends for 2026?",
+      "date": "2025-12-18",
+      "relevance": "Primary evidence: central theme 'Recalibrating identities' and eight trends; identity intentional, belonging self-defined."
+    },
+    {
+      "article_url": "https://www.experian.com/blogs/marketing-forward/what-2026-consumer-insights-mean-for-marketers/",
+      "publication": "Experian Marketing Forward",
+      "title": "What 2026 consumer insights mean for marketers",
+      "date": "2025-12-11",
+      "relevance": "Supporting context: consumers reconsidering engagement, wanting value and relevance; trust and identity as foundation."
+    }
+  ],
+  "data_sources": [
+    {
+      "source_type": "web_search",
+      "source_url": "https://www.wearehuman8.com/blog/what-are-the-key-consumer-trends-for-2026/",
+      "source_name": "Human8 2026 consumer trends",
+      "retrieved_date": "2026-01-28T12:27:06-05:00",
+      "contribution": "Theme and survey data (67% happy, 46% trust, recalibrating identities)."
+    },
+    {
+      "source_type": "web_search",
+      "source_name": "Consumer culture and identity 2025 2026",
+      "retrieved_date": "2026-01-28T12:27:06-05:00",
+      "contribution": "Aggregated search results on identity and consumer behavior."
+    }
+  ],
+  "keywords": ["recalibrating identities", "consumer identity", "belonging", "self-defined", "2026 trends", "contradiction", "trust"],
+  "related_topics": ["generational behavior", "trust", "personalization", "values"],
+  "implications": ["Position brand around self-defined belonging and earned success; avoid one-size-fits-all identity narratives.", "Emphasize transparency and relevance so consumers feel recognised without feeling surveilled."],
+  "temporal_context": {
+    "timeframe": "2025-2026",
+    "is_emerging": true,
+    "velocity": "moderate"
+  },
+  "geographic_scope": ["Global", "North America", "Europe", "Asia"],
+  "industry_sectors": ["retail", "brand strategy", "consumer research", "media"],
+  "generated_date": "2026-01-28T12:27:06-05:00",
+  "generated_by": "query-orchestrator",
+  "query_context": {
+    "query_id": "qry_20260128_consumer_identity",
+    "query_text": "consumer culture and identity",
+    "query_type": "topic_search"
+  },
+  "provenance": {
+    "data_collection_method": "Automated web search and article fetch",
+    "processing_steps": ["Web search: consumer culture and identity 2025 2026", "Web search: identity and brands consumer behavior", "Fetched Experian and Human8 articles", "Cross-source analysis for themes"],
+    "citations": [
+      "Human8. (2025, December 18). What are the key consumer trends for 2026? Human8. https://www.wearehuman8.com/blog/what-are-the-key-consumer-trends-for-2026/",
+      "Experian Marketing Services. (2025, December 11). What 2026 consumer insights mean for marketers. Experian Marketing Forward. https://www.experian.com/blogs/marketing-forward/what-2026-consumer-insights-mean-for-marketers/"
+    ],
+    "verification_status": "partially_verified",
+    "data_quality_score": 0.8
+  }
+}

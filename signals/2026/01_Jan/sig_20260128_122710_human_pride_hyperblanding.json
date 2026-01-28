@@ -1,0 +1,53 @@
+{
+  "signal_id": "sig_20260128_122710_human_pride_hyperblanding",
+  "signal_type": "trend",
+  "topic": "consumer culture and identity",
+  "title": "Human pride and hyper-blanding: reclaiming the human and the individual",
+  "summary": "64% worry technology will erode the human touch; 76% believe human creativity, craft, and imperfection will always matter more than machine-made outputs. Simultaneously, 54% feel everything looks the same (hyper-blanding); a quiet movement is reclaiming individuality, edge, and authenticity.",
+  "detailed_analysis": "Human8 frames two related 2026 trends. Human pride: people are rediscovering the value of creativity, craft, emotion, and imperfection—lopsided ceramics, off-script conversations, the 'spark, mess, and magic' that only humans create. AI may accelerate creation, but human imagination, connection, and meaning give it heart. Hyper-blanding: globalisation, hyper-connectedness, rapid trend cycles, and AI-fuelled replication make styles and ideas spread fast; 54% say from clothes to content, everything feels the same. That sameness offers comfort but also tension; a growing appetite for reclaiming individuality, edge, and authenticity is emerging. For consumer culture and identity: self-expression is partly a reaction against both automation and homogeneity—brands that stand for human craft, imperfection, or distinctiveness can align with this recalibration of identity.",
+  "confidence_score": 0.83,
+  "relevance_score": 0.92,
+  "source_articles": [
+    {
+      "article_url": "https://www.wearehuman8.com/blog/what-are-the-key-consumer-trends-for-2026/",
+      "publication": "Human8",
+      "title": "What are the key consumer trends for 2026?",
+      "date": "2025-12-18",
+      "relevance": "Primary evidence: Human pride (64%, 76%), Hyper blanding (54%); reclaiming human and individuality."
+    }
+  ],
+  "data_sources": [
+    {
+      "source_type": "web_search",
+      "source_name": "Consumer culture and identity 2025 2026",
+      "retrieved_date": "2026-01-28T12:27:06-05:00",
+      "contribution": "Aggregated framing of human vs. machine and sameness vs. individuality."
+    }
+  ],
+  "keywords": ["human pride", "hyper-blanding", "authenticity", "creativity", "individuality", "AI", "sameness", "craft"],
+  "related_topics": ["AI", "authenticity", "craft", "differentiation", "self-expression"],
+  "implications": ["Emphasise human craft, imperfection, or distinctiveness where credible; avoid generic or AI-sameness aesthetics.", "Offer ways to express individuality and edge without requiring premium price if targeting value-conscious consumers."],
+  "temporal_context": {
+    "timeframe": "2025-2026",
+    "is_emerging": true,
+    "velocity": "moderate"
+  },
+  "geographic_scope": ["Global"],
+  "industry_sectors": ["retail", "creative industries", "brand strategy", "content"],
+  "generated_date": "2026-01-28T12:27:10-05:00",
+  "generated_by": "query-orchestrator",
+  "query_context": {
+    "query_id": "qry_20260128_consumer_identity",
+    "query_text": "consumer culture and identity",
+    "query_type": "topic_search"
+  },
+  "provenance": {
+    "data_collection_method": "Automated web search and article fetch",
+    "processing_steps": ["Web search and fetch Human8 2026 trends", "Extraction of Human pride and Hyper blanding with statistics"],
+    "citations": [
+      "Human8. (2025, December 18). What are the key consumer trends for 2026? Human8. https://www.wearehuman8.com/blog/what-are-the-key-consumer-trends-for-2026/"
+    ],
+    "verification_status": "partially_verified",
+    "data_quality_score": 0.8
+  }
+}

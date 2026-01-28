@@ -11,8 +11,4 @@ This may have already been provided in the prompt.
 
 ## Fetch Instructions
 
-For each article, delgate the fetching task to the fetching subagent. 
-
-
-
-
+For each article, delgate the fetching task to the fetching subagent.

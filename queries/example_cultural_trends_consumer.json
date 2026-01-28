@@ -1,0 +1,75 @@
+{
+  "query_id": "qry_20260128_cultural_trends",
+  "query_name": "Cultural Trends & Consumer Behavior",
+  "query_type": "broad_topic",
+  "topic": "cultural trends consumer behavior",
+  "search_terms": [
+    "cultural trends consumer behavior",
+    "consumer behavior shifts 2025",
+    "ritual and consumption",
+    "values and consumption",
+    "experiential economy",
+    "identity and brands",
+    "generational consumer culture",
+    "subculture mainstream brands"
+  ],
+  "search_scope": {
+    "geographic": ["Global", "North America", "Europe", "Asia"],
+    "temporal": {
+      "lookback_days": 60,
+      "focus_period": "Last 2 months"
+    },
+    "languages": ["en"]
+  },
+  "data_sources": {
+    "web_search": true,
+    "publications": [
+      "Harvard Business Review",
+      "MIT Sloan Management Review",
+      "Journal of Consumer Research",
+      "WARC",
+      "TrendWatching",
+      "Financial Times",
+      "The Atlantic",
+      "Vogue Business"
+    ],
+    "article_archive": true
+  },
+  "processing_instructions": {
+    "signal_types": ["trend", "insight", "pattern", "opportunity"],
+    "min_confidence": 0.6,
+    "max_signals": 8,
+    "focus_areas": [
+      "consumer values and meaning",
+      "ritual and habitual behavior",
+      "identity and belonging",
+      "cultural diffusion and mainstreaming",
+      "experiential vs material consumption",
+      "generational and cohort shifts",
+      "symbolism and semiotics in markets"
+    ]
+  },
+  "automation_config": {
+    "enabled": false,
+    "schedule": "0 9 * * 1",
+    "auto_save_signals": true,
+    "notification_enabled": false
+  },
+  "filters": {
+    "min_article_length": 600,
+    "source_credibility": "high_credibility"
+  },
+  "provenance_config": {
+    "track_all_sources": true,
+    "include_processing_steps": true,
+    "citation_format": "APA"
+  },
+  "created_date": "2026-01-28T15:09:43Z",
+  "created_by": "system",
+  "execution_count": 0,
+  "metadata": {
+    "description": "Cultural analysis and consumer intelligence: trends, ritual, values, identity, experiential economy, and cultural diffusion. For business anthropology and cultural analyst use.",
+    "tags": ["cultural-analysis", "consumer-behavior", "trends", "anthropology", "cultural-trends"],
+    "priority": "high"
+  }
+}

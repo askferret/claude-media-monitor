@@ -1,0 +1,48 @@
+{
+  "query_id": "qry_20260128_consumer_identity",
+  "query_name": "Consumer Culture and Identity",
+  "query_type": "broad_topic",
+  "topic": "consumer culture and identity",
+  "search_terms": [
+    "consumer culture and identity",
+    "identity and brands consumer behavior",
+    "belonging self-expression",
+    "cultural trends consumer 2025 2026"
+  ],
+  "search_scope": {
+    "geographic": ["Global", "North America", "Europe"],
+    "temporal": {
+      "lookback_days": 60,
+      "focus_period": "Last 2 months"
+    },
+    "languages": ["en"]
+  },
+  "data_sources": {
+    "web_search": true,
+    "article_archive": true
+  },
+  "processing_instructions": {
+    "signal_types": ["trend", "insight", "pattern", "opportunity"],
+    "min_confidence": 0.6,
+    "max_signals": 8
+  },
+  "automation_config": {
+    "enabled": false,
+    "auto_save_signals": true,
+    "notification_enabled": false
+  },
+  "provenance_config": {
+    "track_all_sources": true,
+    "include_processing_steps": true,
+    "citation_format": "APA"
+  },
+  "created_date": "2026-01-28T12:27:06-05:00",
+  "created_by": "query-orchestrator",
+  "last_executed": "2026-01-28T12:27:10-05:00",
+  "execution_count": 1,
+  "metadata": {
+    "description": "Topic query: consumer culture and identity. Identity-driven consumption, belonging, self-expression, recalibrating identities.",
+    "tags": ["consumer-culture", "identity", "cultural-analysis", "trends"],
+    "priority": "high"
+  }
+}

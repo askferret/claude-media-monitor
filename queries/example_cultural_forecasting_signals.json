@@ -1,0 +1,74 @@
+{
+  "query_id": "qry_20260128_cultural_forecast",
+  "query_name": "Cultural Forecasting & Emerging Signals",
+  "query_type": "trend_tracking",
+  "topic": "cultural forecasting and signals",
+  "search_terms": [
+    "cultural forecasting",
+    "emerging cultural signals",
+    "trend foresight consumer",
+    "weak signals culture",
+    "consumer foresight",
+    "cultural shift prediction",
+    "future of consumption",
+    "cultural trend reports 2025 2026"
+  ],
+  "search_scope": {
+    "geographic": ["Global", "North America", "Europe"],
+    "temporal": {
+      "lookback_days": 90,
+      "focus_period": "Recent quarter"
+    },
+    "languages": ["en"]
+  },
+  "data_sources": {
+    "web_search": true,
+    "publications": [
+      "Harvard Business Review",
+      "McKinsey",
+      "Deloitte Insights",
+      "TrendWatching",
+      "JWT Intelligence",
+      "PSFK",
+      "The Future Laboratory",
+      "WARC"
+    ],
+    "article_archive": true
+  },
+  "processing_instructions": {
+    "signal_types": ["trend", "insight", "development", "anomaly"],
+    "min_confidence": 0.55,
+    "max_signals": 8,
+    "focus_areas": [
+      "early and weak signals",
+      "cultural emergence",
+      "forecasting methods and frameworks",
+      "horizon scanning",
+      "discontinuities and anomalies",
+      "cross-domain cultural shifts"
+    ]
+  },
+  "automation_config": {
+    "enabled": false,
+    "schedule": "0 9 * * 1",
+    "auto_save_signals": true,
+    "notification_enabled": false
+  },
+  "filters": {
+    "min_article_length": 500,
+    "source_credibility": "high_credibility"
+  },
+  "provenance_config": {
+    "track_all_sources": true,
+    "include_processing_steps": true,
+    "citation_format": "APA"
+  },
+  "created_date": "2026-01-28T15:09:43Z",
+  "created_by": "system",
+  "execution_count": 0,
+  "metadata": {
+    "description": "Cultural forecasting and emerging signals: foresight, weak signals, trend reports, and cultural shift detection. For cultural analysts and strategists.",
+    "tags": ["cultural-forecasting", "signals", "foresight", "trends", "weak-signals"],
+    "priority": "high"
+  }
+}

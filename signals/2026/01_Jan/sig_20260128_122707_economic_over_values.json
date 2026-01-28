@@ -1,0 +1,53 @@
+{
+  "signal_id": "sig_20260128_122707_economic_over_values",
+  "signal_type": "trend",
+  "topic": "consumer culture and identity",
+  "title": "Economic stability outweighing values in consumer decisions",
+  "summary": "Consumers still care about brand values, but economic stability is becoming the stronger driver of what they buy, where they shop, and which brands they trust. Environmental concerns fell from #4 to #9 in global worries (2024–2025); financial and geopolitical pressures lead.",
+  "detailed_analysis": "Experian cites Nielsen 2026 consumer outlook: 32.8% of global shoppers feel financially worse off than last year, and 73% of those cite rising cost-of-living pressures. People are spending but directing most dollars toward core categories (food, health, household care). The shift from values-led to economics-led decisions does not mean values disappear—consumers want brands to be responsible, fair, and transparent—but they expect values to align with financial reality. Implication for identity: how people 'recalibrate' and express identity through consumption is increasingly mediated by budget and value-for-money; brand meaning and belonging must fit within that constraint.",
+  "confidence_score": 0.88,
+  "relevance_score": 0.9,
+  "source_articles": [
+    {
+      "article_url": "https://www.experian.com/blogs/marketing-forward/what-2026-consumer-insights-mean-for-marketers/",
+      "publication": "Experian Marketing Forward",
+      "title": "What 2026 consumer insights mean for marketers",
+      "date": "2025-12-11",
+      "relevance": "Primary evidence: 32.8% worse off, 73% cost-of-living; environmental #4 to #9; economic stability over values."
+    }
+  ],
+  "data_sources": [
+    {
+      "source_type": "web_search",
+      "source_name": "Consumer culture and identity 2025 2026",
+      "retrieved_date": "2026-01-28T12:27:06-05:00",
+      "contribution": "Context on values vs. economics in consumer priorities."
+    }
+  ],
+  "keywords": ["economic stability", "values", "cost of living", "consumer priorities", "environmental concerns", "2026"],
+  "related_topics": ["values", "sustainability", "budget", "trust"],
+  "implications": ["Tailor messaging to financial reality by segment (stretched vs. flexible); avoid values-only positioning without value proof.", "Identity and belonging narratives should acknowledge budget and value, not only aspiration."],
+  "temporal_context": {
+    "timeframe": "2025-2026",
+    "is_emerging": false,
+    "velocity": "moderate"
+  },
+  "geographic_scope": ["Global"],
+  "industry_sectors": ["retail", "FMCG", "brand strategy"],
+  "generated_date": "2026-01-28T12:27:07-05:00",
+  "generated_by": "query-orchestrator",
+  "query_context": {
+    "query_id": "qry_20260128_consumer_identity",
+    "query_text": "consumer culture and identity",
+    "query_type": "topic_search"
+  },
+  "provenance": {
+    "data_collection_method": "Automated web search and article fetch",
+    "processing_steps": ["Web search and fetch Experian 2026 consumer insights", "Extraction of Nielsen and Experian statistics"],
+    "citations": [
+      "Experian Marketing Services. (2025, December 11). What 2026 consumer insights mean for marketers. Experian Marketing Forward. https://www.experian.com/blogs/marketing-forward/what-2026-consumer-insights-mean-for-marketers/"
+    ],
+    "verification_status": "partially_verified",
+    "data_quality_score": 0.82
+  }
+}
