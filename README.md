@@ -257,17 +257,6 @@ User: "Fetch these 10 articles about climate policy"
 Claude: [Processes all articles, provides summary report]
 ```
 
-**Signal Generation from Existing Articles:**
-```
-User: "/signals --generate from articles --topic 'artificial intelligence'"
-
-System:
-1. Searches article archive for AI-related articles
-2. Analyzes collection for patterns and trends
-3. Generates signals from existing data
-4. Maintains provenance linking back to archive
-```
-
 ### Analysis
 ```
 User: "/analyze the last month"

@@ -22,7 +22,7 @@ Unlike traditional media monitoring systems that require manual article selectio
 
 ```
 /articles/              # All fetched articles organized by date
-  /YYYY/               # Year folders (2000-2026+)
+  /YYYY/               # Year folders (YYYY format)
     /MM_MonthName/     # Month folders (01_Jan through 12_Dec)
       article_*.md     # Individual article files
 /signals/              # Generated signals organized by date

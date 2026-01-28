@@ -77,11 +77,7 @@ Human-readable summary including:
 
 ### From Existing Archive
 
-1. User requests signal generation: `/signals --generate from articles --topic "AI"`
-2. System analyzes existing article collection
-3. Identifies patterns across archived content
-4. Generates signals linking to archive
-5. Saves with provenance showing archive source
+Signals can also be generated from articles already in the archive by using the query-orchestrator agent with archive-only data sources configured in the query configuration.
 
 ## Provenance & Quality
 
@@ -143,10 +139,7 @@ Every signal includes:
 
 ### Export Signals
 
-```
-/export --signals --topic "psychology" --format json
-/export --signals --type trend --format csv
-```
+Signal data can be exported by reading the JSON files directly from the `/signals/` directory or by using standard file export tools.
 
 ## Integration
 

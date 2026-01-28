@@ -175,7 +175,7 @@ User-defined research objectives
 
 ## Automation
 
-Queries can be scheduled to run automatically:
+Queries can be scheduled to run automatically using the `schedule` field in `automation_config`:
 
 **Daily**:
 ```json
@@ -189,11 +189,16 @@ Runs every day at 9 AM
 ```
 Runs every Monday at 9 AM
 
-**Custom (Cron)**:
+**Custom (Cron Syntax)**:
 ```json
 "schedule": "0 10 * * 2,5"
 ```
 Runs Tuesdays and Fridays at 10 AM
+
+The schedule field accepts:
+- Simple string values: `"daily"`, `"weekly"`
+- Standard cron syntax for custom schedules: `"MIN HOUR DAY MONTH WEEKDAY"`
+- Examples: `"0 9 * * *"` (daily at 9 AM), `"0 9 * * 1"` (Mondays at 9 AM)
 
 When automated:
 - Query executes on schedule

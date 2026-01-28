@@ -181,7 +181,7 @@
     "generated_by": {
       "type": "string",
       "description": "System or agent that generated this signal",
-      "examples": ["signal-generator-agent", "query-system"]
+      "examples": ["signal-generator", "query-orchestrator"]
     },
     "query_context": {
       "type": "object",
@@ -231,7 +231,7 @@
                 "description": "Agent or system that performed this step"
               }
             },
-            "required": ["step"]
+            "required": ["step", "timestamp"]
           }
         },
         "data_quality_score": {
@@ -253,7 +253,7 @@
           }
         }
       },
-      "required": ["data_collection_method"]
+      "required": ["data_collection_method", "processing_steps", "verification_status"]
     },
     "metadata": {
       "type": "object",
@@ -286,6 +286,7 @@
     "summary",
     "detailed_analysis",
     "confidence_score",
+    "relevance_score",
     "source_articles",
     "keywords",
     "generated_date",
