@@ -1,0 +1,295 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Signal Data",
+  "description": "Schema for automated signals generated from media monitoring and topic research",
+  "type": "object",
+  "properties": {
+    "signal_id": {
+      "type": "string",
+      "description": "Unique identifier for the signal",
+      "pattern": "^sig_[0-9]{8}_[0-9]{6}_[a-z0-9]+$",
+      "examples": ["sig_20260128_150943_ai_regulation"]
+    },
+    "signal_type": {
+      "type": "string",
+      "description": "Type of signal generated",
+      "enum": ["trend", "insight", "pattern", "anomaly", "opportunity", "risk", "development"],
+      "examples": ["trend", "insight"]
+    },
+    "topic": {
+      "type": "string",
+      "description": "Primary topic or theme this signal relates to",
+      "examples": ["artificial intelligence", "luxury brands", "climate policy", "psychology"]
+    },
+    "title": {
+      "type": "string",
+      "description": "Concise, descriptive title for the signal",
+      "examples": ["Rising AI Regulation in European Markets", "Luxury Consumer Shift to Sustainability"]
+    },
+    "summary": {
+      "type": "string",
+      "description": "Brief summary of the signal (1-2 sentences)",
+      "maxLength": 500
+    },
+    "detailed_analysis": {
+      "type": "string",
+      "description": "Comprehensive analysis of the signal, including context, implications, and insights"
+    },
+    "confidence_score": {
+      "type": "number",
+      "description": "Confidence level in this signal (0.0 to 1.0)",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "relevance_score": {
+      "type": "number",
+      "description": "Relevance to monitoring objectives (0.0 to 1.0)",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "source_articles": {
+      "type": "array",
+      "description": "Array of source articles that contributed to this signal",
+      "items": {
+        "type": "object",
+        "properties": {
+          "article_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of the source article"
+          },
+          "publication": {
+            "type": "string",
+            "description": "Name of the publication"
+          },
+          "title": {
+            "type": "string",
+            "description": "Article title"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Publication date"
+          },
+          "relevance": {
+            "type": "string",
+            "description": "How this article contributed to the signal",
+            "examples": ["Primary evidence", "Supporting context", "Corroborating data"]
+          }
+        },
+        "required": ["article_url", "publication", "title"]
+      },
+      "minItems": 1
+    },
+    "data_sources": {
+      "type": "array",
+      "description": "Additional data sources beyond articles (web searches, reports, etc.)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_type": {
+            "type": "string",
+            "enum": ["web_search", "research_report", "database", "api", "social_media", "other"],
+            "description": "Type of data source"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL or identifier for the source"
+          },
+          "source_name": {
+            "type": "string",
+            "description": "Name or description of the source"
+          },
+          "retrieved_date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When the data was retrieved"
+          },
+          "contribution": {
+            "type": "string",
+            "description": "What this source contributed to the signal"
+          }
+        },
+        "required": ["source_type", "source_name"]
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "description": "Key terms and concepts related to this signal",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3,
+      "maxItems": 10
+    },
+    "related_topics": {
+      "type": "array",
+      "description": "Related topics or themes",
+      "items": {
+        "type": "string"
+      }
+    },
+    "implications": {
+      "type": "array",
+      "description": "Key implications or takeaways from this signal",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "temporal_context": {
+      "type": "object",
+      "description": "Time-related context for the signal",
+      "properties": {
+        "timeframe": {
+          "type": "string",
+          "description": "Time period this signal covers",
+          "examples": ["Last 30 days", "Q4 2025", "2025-2026"]
+        },
+        "is_emerging": {
+          "type": "boolean",
+          "description": "Is this an emerging trend or development?"
+        },
+        "velocity": {
+          "type": "string",
+          "enum": ["rapid", "moderate", "slow", "stable"],
+          "description": "Rate of change or development"
+        }
+      }
+    },
+    "geographic_scope": {
+      "type": "array",
+      "description": "Geographic regions this signal applies to",
+      "items": {
+        "type": "string"
+      },
+      "examples": [["Global"], ["United States", "Europe"], ["Asia-Pacific"]]
+    },
+    "industry_sectors": {
+      "type": "array",
+      "description": "Industry sectors affected or relevant",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generated_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this signal was generated"
+    },
+    "generated_by": {
+      "type": "string",
+      "description": "System or agent that generated this signal",
+      "examples": ["signal-generator-agent", "query-system"]
+    },
+    "query_context": {
+      "type": "object",
+      "description": "Context about the query that generated this signal",
+      "properties": {
+        "query_id": {
+          "type": "string",
+          "description": "Identifier for the originating query"
+        },
+        "query_text": {
+          "type": "string",
+          "description": "The original query or search terms"
+        },
+        "query_type": {
+          "type": "string",
+          "enum": ["topic_search", "trend_analysis", "competitive_intel", "custom"],
+          "description": "Type of query that generated this signal"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Complete provenance trail for data quality and trust",
+      "properties": {
+        "data_collection_method": {
+          "type": "string",
+          "description": "How the underlying data was collected",
+          "examples": ["Automated web search", "API retrieval", "Manual curation"]
+        },
+        "processing_steps": {
+          "type": "array",
+          "description": "Steps taken to process data into this signal",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step": {
+                "type": "string",
+                "description": "Description of the processing step"
+              },
+              "timestamp": {
+                "type": "string",
+                "format": "date-time",
+                "description": "When this step occurred"
+              },
+              "agent": {
+                "type": "string",
+                "description": "Agent or system that performed this step"
+              }
+            },
+            "required": ["step"]
+          }
+        },
+        "data_quality_score": {
+          "type": "number",
+          "description": "Assessed quality of underlying data (0.0 to 1.0)",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": ["verified", "partially_verified", "unverified"],
+          "description": "Verification status of the signal's claims"
+        },
+        "citations": {
+          "type": "array",
+          "description": "Formal citations for all sources",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": ["data_collection_method"]
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata",
+      "properties": {
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "visibility": {
+          "type": "string",
+          "enum": ["public", "internal", "confidential"],
+          "description": "Visibility level for this signal"
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["critical", "high", "medium", "low"],
+          "description": "Priority level for attention"
+        }
+      }
+    }
+  },
+  "required": [
+    "signal_id",
+    "signal_type",
+    "topic",
+    "title",
+    "summary",
+    "detailed_analysis",
+    "confidence_score",
+    "source_articles",
+    "keywords",
+    "generated_date",
+    "generated_by",
+    "provenance"
+  ]
+}

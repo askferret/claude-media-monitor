@@ -1,0 +1,265 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Query Configuration",
+  "description": "Schema for automated query configurations that drive signal generation",
+  "type": "object",
+  "properties": {
+    "query_id": {
+      "type": "string",
+      "description": "Unique identifier for this query",
+      "pattern": "^qry_[0-9]{8}_[a-z0-9_]+$",
+      "examples": ["qry_20260128_ai_regulation"]
+    },
+    "query_name": {
+      "type": "string",
+      "description": "Human-readable name for this query",
+      "examples": ["AI Regulation Monitoring", "Luxury Brand Trends"]
+    },
+    "query_type": {
+      "type": "string",
+      "description": "Type of query",
+      "enum": ["broad_topic", "specific_subject", "trend_tracking", "competitive_intelligence", "custom"],
+      "examples": ["broad_topic", "trend_tracking"]
+    },
+    "topic": {
+      "type": "string",
+      "description": "Primary topic or subject being queried",
+      "examples": ["psychology", "luxury brands", "artificial intelligence", "climate policy"]
+    },
+    "search_terms": {
+      "type": "array",
+      "description": "Search terms and keywords to use",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "examples": [["AI regulation", "artificial intelligence policy", "AI governance"]]
+    },
+    "search_scope": {
+      "type": "object",
+      "description": "Scope parameters for the search",
+      "properties": {
+        "geographic": {
+          "type": "array",
+          "description": "Geographic regions to focus on",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["Global"], ["United States", "Europe"]]
+        },
+        "temporal": {
+          "type": "object",
+          "description": "Time-related constraints",
+          "properties": {
+            "lookback_days": {
+              "type": "integer",
+              "description": "How many days back to search",
+              "minimum": 1,
+              "examples": [30, 90, 365]
+            },
+            "focus_period": {
+              "type": "string",
+              "description": "Specific time period to focus on",
+              "examples": ["Last month", "Q4 2025", "2025"]
+            }
+          }
+        },
+        "languages": {
+          "type": "array",
+          "description": "Languages to include",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["en"], ["en", "es", "fr"]]
+        }
+      }
+    },
+    "data_sources": {
+      "type": "object",
+      "description": "Configuration for data sources to query",
+      "properties": {
+        "web_search": {
+          "type": "boolean",
+          "description": "Enable automated web search",
+          "default": true
+        },
+        "publications": {
+          "type": "array",
+          "description": "Specific publications to prioritize",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["Economist", "Financial Times", "New York Times"]]
+        },
+        "article_archive": {
+          "type": "boolean",
+          "description": "Search existing article archive",
+          "default": true
+        },
+        "external_apis": {
+          "type": "array",
+          "description": "External APIs to query",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "processing_instructions": {
+      "type": "object",
+      "description": "Instructions for processing and signal generation",
+      "properties": {
+        "signal_types": {
+          "type": "array",
+          "description": "Types of signals to generate",
+          "items": {
+            "type": "string",
+            "enum": ["trend", "insight", "pattern", "anomaly", "opportunity", "risk", "development"]
+          },
+          "examples": [["trend", "insight", "development"]]
+        },
+        "min_confidence": {
+          "type": "number",
+          "description": "Minimum confidence score for generated signals",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "default": 0.6
+        },
+        "max_signals": {
+          "type": "integer",
+          "description": "Maximum number of signals to generate",
+          "minimum": 1,
+          "default": 10
+        },
+        "focus_areas": {
+          "type": "array",
+          "description": "Specific focus areas or aspects to analyze",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["regulatory changes", "market trends", "technological developments"]]
+        }
+      }
+    },
+    "automation_config": {
+      "type": "object",
+      "description": "Configuration for automated execution",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Is automated execution enabled?",
+          "default": false
+        },
+        "schedule": {
+          "type": "string",
+          "description": "Schedule for automated runs (cron-like syntax)",
+          "examples": ["daily", "weekly", "0 9 * * 1"]
+        },
+        "auto_save_signals": {
+          "type": "boolean",
+          "description": "Automatically save generated signals to database",
+          "default": true
+        },
+        "notification_enabled": {
+          "type": "boolean",
+          "description": "Send notifications when new signals are generated",
+          "default": false
+        }
+      }
+    },
+    "filters": {
+      "type": "object",
+      "description": "Filters to apply during search and processing",
+      "properties": {
+        "exclude_keywords": {
+          "type": "array",
+          "description": "Keywords to exclude from results",
+          "items": {
+            "type": "string"
+          }
+        },
+        "min_article_length": {
+          "type": "integer",
+          "description": "Minimum article word count",
+          "minimum": 0
+        },
+        "source_credibility": {
+          "type": "string",
+          "enum": ["any", "verified_only", "high_credibility"],
+          "description": "Filter by source credibility level"
+        }
+      }
+    },
+    "provenance_config": {
+      "type": "object",
+      "description": "Configuration for provenance tracking",
+      "properties": {
+        "track_all_sources": {
+          "type": "boolean",
+          "description": "Track all data sources in provenance trail",
+          "default": true
+        },
+        "include_processing_steps": {
+          "type": "boolean",
+          "description": "Include detailed processing steps",
+          "default": true
+        },
+        "citation_format": {
+          "type": "string",
+          "enum": ["APA", "MLA", "Chicago", "custom"],
+          "description": "Format for citations",
+          "default": "APA"
+        }
+      }
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this query configuration was created"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "User or system that created this query"
+    },
+    "last_executed": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this query was last executed"
+    },
+    "execution_count": {
+      "type": "integer",
+      "description": "Number of times this query has been executed",
+      "minimum": 0,
+      "default": 0
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Detailed description of this query's purpose"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["critical", "high", "medium", "low"],
+          "description": "Priority level for this query"
+        }
+      }
+    }
+  },
+  "required": [
+    "query_id",
+    "query_name",
+    "query_type",
+    "topic",
+    "search_terms",
+    "created_date"
+  ]
+}
